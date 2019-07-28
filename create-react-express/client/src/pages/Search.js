@@ -6,7 +6,7 @@ import Footer from "../components/footer"
 import Book from "../components/book";
 import API from "../utilities/api";
 import { Col, Row, Container } from "../components/grid";
-import List from "../components/list";
+import { List } from "../components/list";
 
 class Search extends Component {
     state = {
