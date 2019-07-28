@@ -2,12 +2,13 @@ import React, { Component } from "react";
 import Jumbotron from "../components/jumbotron";
 import Card from "../components/card";
 import Form from "../components/form";
+import Footer from "../components/footer"
 import Book from "../components/book";
 import API from "../utilities/api";
 import { Col, Row, Container } from "../components/grid";
-import { List } from "../components/list";
+import List from "../components/list";
 
-class Home extends Component {
+class Search extends Component {
     state = {
       books: [],
       q: "",
@@ -62,9 +63,10 @@ class Home extends Component {
             <Col size="md-12">
               <Jumbotron>
                 <h1 className="text-center">
-                  <strong>(React) Google Books Search</strong>
+                  <strong>Book Search</strong>
                 </h1>
-                <h2 className="text-center">Search for and Save Books of Interest.</h2>
+                <h2 className="text-center">Powered by React</h2>
+                <h3>Search for a book below </h3>
               </Jumbotron>
             </Col>
             <Col size="md-12">
@@ -81,7 +83,7 @@ class Home extends Component {
             <Col size="md-12">
               <Card title="Results">
                 {this.state.books.length ? (
-                  <List>
+                <List>
                     {this.state.books.map(book => (
                       <Book
                         key={book.id}
@@ -108,10 +110,11 @@ class Home extends Component {
               </Card>
             </Col>
           </Row>
+          <Footer />
         </Container>
       );
     }
   }
   
-  export default Home;
+  export default Search;
   
