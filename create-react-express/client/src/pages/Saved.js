@@ -36,11 +36,11 @@ class Saved extends Component {
         <Container>
           <Row>
             <Col size="md-12">
-              <Jumbotron>
-                <h1 className="text-center">
-                  <strong>(React) Google Books Search</strong>
-                </h1>
-                <h2 className="text-center">Search for and Save Books of Interest.</h2>
+            <Jumbotron>
+              <h1 className="text-center">
+                <strong>Book Search</strong>
+              </h1>
+              <h2 className="text-center">Powered by React</h2>
               </Jumbotron>
             </Col>
           </Row>
